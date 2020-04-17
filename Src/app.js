@@ -10,6 +10,7 @@ require('./Scripts/main');
 require('./Scripts/placeDetail');
 
 // Styles
+import './Styles/home.css';
 import './Styles/main.css';
 import './Styles/aboutPlaces.css';
 import './Styles/aboutUs.css';

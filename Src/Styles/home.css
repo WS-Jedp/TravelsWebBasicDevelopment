@@ -1,0 +1,10 @@
+
+.welcome__info{
+  max-width: 50%;
+  padding: var(--big-space);
+}
+
+.welcome__video{
+  max-width: 50%;
+}
+
