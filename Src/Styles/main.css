@@ -106,6 +106,10 @@
     line-height: var(--large-space);
   }
 
+  a{
+    outline: none;
+  }
+
   q, i{
     font-family: var(--text-normal);
     font-weight: lighter;
@@ -133,7 +137,7 @@
   
  
 
-  .button__secundary{
+  .button__secondary{
     background-color: var(--main-color);
     color: var(--white-color);
     border: 1px solid var(--white-color);
@@ -171,6 +175,21 @@
     align-items: flex-end;
   }
 
+  .container-bottom{
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .container-top{
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .background-white{
+    background-color: var(--white-color);
+    color: black;
+  }
+
 
 /* Start header  */
   .main-header{
@@ -180,9 +199,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 64px;
+    min-height: 40px;
     box-shadow: 0 0 16px var(--light-shadow);
     background-color: var(--white-color);
+    z-index: 100;
   }
 
   .main-header__nav{
@@ -203,6 +223,10 @@
     padding: var(--small-space);
   }
 
+  .main-header__pages > a{
+    font-size: var(--text-button)
+  }
+
   .main-header-mobile{
     display: none;
   }
@@ -218,6 +242,38 @@
     color: var(--secondary-color);
   }
 /* End Transitions */
+
+
+/* --------------------------- Start Travel section ------------------------------- */
+  /* --------------------------- Start Travel section ------------------------------- */
+  .container__start--travel{
+    width: 100%;
+    min-height: 32vh;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../Assets/Images/teamBeach.jpg');
+    background-position: center;
+  }
+
+  .container__start--travel > *{
+    margin: var(--small-space);
+  }
+
+  .form__fast--travel input[type='text'], .form__fast--travel input[type='number'], .form__fast--travel[type='date'], .form__fast--travel select{
+      margin: 0;
+      border: 0;
+      min-width: 200px;
+      max-width: 200px;
+      background-color: var(--white-color) !important;
+  }
+  .fast--travel-container{
+    padding: var(--medium-space);
+    border: 1px solid var(--black-color);
+    margin-bottom: var(--small-space);
+  }
+  /* --------------------------- Start Travel section ------------------------------- */
+/* --------------------------- Start Travel section ------------------------------- */
+
 
 
 

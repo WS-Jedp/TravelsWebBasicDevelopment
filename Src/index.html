@@ -8,6 +8,9 @@
   <link rel="stylesheet" href="Styles/home.css">
 </head>
 <body>
+
+<!-- ------------------------- Start header -------------------------------------- -->
+<!-- ------------------------- Start header -------------------------------------- -->
   <header class='main-header'>
       <nav class='main-header__nav'>
         <ul>
@@ -51,6 +54,12 @@
       </div>
   </header>
 
+<!-- ------------------------- End header -------------------------------------- -->
+<!-- ------------------------- End header -------------------------------------- -->
+
+
+<!-- ------------------------- Start Welcome Section -------------------------------------- -->
+<!-- ------------------------- Start Welcome Section -------------------------------------- -->
   <main id='welcome' class='container-row'>
 
     <div class='welcome__info container-center container-column'>
@@ -63,11 +72,16 @@
       <button class='button__primary'>
         Search My Place and more
       </button>
+
+      <a href="">
+        Go Down
+      </a>
     </div>
 
-    <figure class='welcome__video'>
-      <video src="Assets/videos/BoatGoingAlone.mp4" autoplay height="500px" width="500px"></video>
-      <figcaption>
+    <figure class='welcome__video container-right container-column container-bottom'>
+      <div class='container-video'>
+        <video id='welcome__video--video' src="Assets/videos/BoatGoingAlone.mp4" autoplay muted loop></video>
+        <figcaption class='container-center container-bottom container-column'>
         <q>
           Find home, find yourself, every travel is a new life to live 
         </q>
@@ -78,18 +92,84 @@
           Traveler
         </i>
       </figcaption>
+    </div>
     </figure>
   </main>
 
-  <section>
-    <article></article>
-    <article></article>
+<!-- ------------------------- End Welcome Section -------------------------------------- -->
+<!-- ------------------------- End Welcome Section -------------------------------------- -->
+
+<!-- ------------------------- Start activities Section -------------------------------------- -->
+<!-- ------------------------- Start activities Section -------------------------------------- -->
+  <section id='activities_section' class='background-white'>
+
+    <span id='text__acitivities'>
+      WELCOME TO A NEW LIFE
+    </span>
+    
+    <!-- Information about activities -->
+    <article class='container-center container-column' id='container__activities'>
+      <h2>
+        Activities
+      </h2>
+      <p>
+        Find your favorite activities and make you travel the best experience of your life.
+      </p>
+
+      <div>
+        Slider
+      </div>
+    </article>
+
+    <!-- Search travel activities -->
+    <article class='container-left container-row' id='container__travel'>
+      <figure class='container__travel--img'>
+          <img src="Assets/Images/BoatOnTheBeach.jpeg" alt="">
+      </figure>
+
+      <article class='container-center' id='container__travel--info'>
+        <div class='container-center container-column'>
+          <h3>
+            Make your best travel 
+          </h3>
+          <p>
+            Take a moment for yourself, take a momento for live, start your travel.
+          </p>
+          
+          <button class='button__primary'>
+            Search My Place
+          </button>
+        </div>
+      </article>
+    </article>
+
   </section>
+<!-- ------------------------- End activities Section -------------------------------------- -->
+<!-- ------------------------- End activities Section -------------------------------------- -->
 
-  <div>
-    <figure></figure>
-  </div>
+  <figure class='container-center container-column container__start--travel'>
+      <h2>Start Travel</h2>
+      <p>
+        Select your favorite likes and we'll recommend you the best place for you.
+      </p>
+      <form action="" class='form__fast--travel'>
+        <div class='fast--travel-container background-white'>
+          <input type="number" name="" id="" placeholder="Persons">
+          <select name="" id="">
+            <option value="0" selected>Category</option>
+          </select>
+          <input type="date" name="" id="" >
+        </div>
+        <button type="submit" class='button__secondary'>
+          Search My Place
+        </button>
+      </form>
+  </figure>
 
+
+  
+<!-- ------------------------- Start Footer Section -------------------------------------- -->
+<!-- ------------------------- Start Footer Section -------------------------------------- -->
   <footer>
     <h3></h3>
 
@@ -98,6 +178,10 @@
     <div></div>
     <small></small>
   </footer>
+
+<!-- ------------------------- End Footer Section -------------------------------------- -->
+<!-- ------------------------- End Footer Section -------------------------------------- -->
+
 
 
 </body>
