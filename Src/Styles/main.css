@@ -127,6 +127,14 @@
     transition: .3s ease-in-out;
     cursor: pointer;
     box-shadow: 0 0 16px var(--light-shadow);
+    transition: 0.3s ease-in-out;
+    will-change: scale;
+  }
+  button:hover{
+    transform: scale(1.04);
+  }
+  button:active{
+    transform: scale(0.98);
   }
 
   .button__primary{
@@ -134,9 +142,6 @@
     color: var(--black-color);
     border: 1px solid var(--black-color);
   }
-  
- 
-
   .button__secondary{
     background-color: var(--main-color);
     color: var(--white-color);
@@ -168,6 +173,7 @@
   .container-left{
     display: flex;
     align-items: flex-start;
+    justify-content: flex-start;
   }
 
   .container-right{
@@ -183,11 +189,24 @@
   .container-top{
     display: flex;
     justify-content: flex-start;
+    align-items: flex-start;
   }
 
   .background-white{
     background-color: var(--white-color);
     color: black;
+  }
+
+  .background-black{
+    background-color: var(--black-color);
+    color: var(--white-color);
+  }
+  .background-black h1, .background-black h2, .background-black h3, .background-black h4, .background-black h5, .background-black h6 {
+    color: var(--secondary-color);
+  }
+
+  .background-black p, .background-black a, .background-black span, .background-black small{
+    color: var(--white-color);
   }
 
 
@@ -229,6 +248,19 @@
 
   .main-header-mobile{
     display: none;
+  }
+
+  /* Menu */
+  #container__menu{
+    width: 100%;
+    height: 0;
+    transition: .3s ease-in-out;
+    flex-flow: column nowrap;
+    visibility: hidden;
+    z-index: 1001;
+  }
+  #container__menu > *{
+    margin: var(--normal-space);
   }
 
 /* End header */
@@ -274,6 +306,20 @@
   /* --------------------------- Start Travel section ------------------------------- */
 /* --------------------------- Start Travel section ------------------------------- */
 
+/* --------------------------- Start Footer ------------------------------- */
+  /* --------------------------- Start Footer ------------------------------- */
+  .container__footer{
+    width: 100%;
+    padding: var(--large-space);
+  }
+
+  .container__footer--info > *{
+    margin: var(--large-space);
+  }
+  /* --------------------------- Start Footer ------------------------------- */
+/* --------------------------- Start Footer ------------------------------- */
+
+
 
 
 
@@ -297,4 +343,5 @@
     justify-content: space-between;
     padding: var(--normal-space);
   }
+
 }

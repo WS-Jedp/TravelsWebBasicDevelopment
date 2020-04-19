@@ -10,51 +10,73 @@
 <body>
 
 <!-- ------------------------- Start header -------------------------------------- -->
-<!-- ------------------------- Start header -------------------------------------- -->
-  <header class='main-header'>
-      <nav class='main-header__nav'>
-        <ul>
-          <li class='main-header__pages'>
-            <a href="./index.html">
-              Home
-            </a>
-          </li>
-          <li class='main-header__pages'>
-            <a href="./booking.html">
-              Booking
-            </a>
-          </li>
-          <li class='main-header__pages'>
-            <a href="./aboutUs.html">
-              About Us
-            </a>
-          </li>
-          <li class='main-header__pages'>
-            <a href="./aboutPlaces.html">
-              About Places
-            </a>
-          </li>
-          <li class='main-header__pages'>
-            <a href="./contact.html">
-              Contact
-            </a>
-          </li>
+  <!-- ------------------------- Start header -------------------------------------- -->
+
+  <!-- ------------------------- Start Menu -------------------------------------- -->
+  
+
+
+    <header class='main-header container-column'>
+      <menu class='container-center container-column background-black' id='container__menu' opne='close'> 
+        <h2>
+          Navigation
+        </h2>
+    
+        <ul class='container-center container-column'>
+          <li><a href="">Home</a></li>
+          <li><a href="">Booking</a></li>
+          <li><a href="">About Places</a></li>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Contact</a></li>  
         </ul>
-      </nav>
+    
+        <small>
+          Copyright Booking.com
+        </small>
+      </menu>
+        <nav class='main-header__nav'>
+          <ul>
+            <li class='main-header__pages'>
+              <a href="./index.html">
+                Home
+              </a>
+            </li>
+            <li class='main-header__pages'>
+              <a href="./booking.html">
+                Booking
+              </a>
+            </li>
+            <li class='main-header__pages'>
+              <a href="./aboutUs.html">
+                About Us
+              </a>
+            </li>
+            <li class='main-header__pages'>
+              <a href="./aboutPlaces.html">
+                About Places
+              </a>
+            </li>
+            <li class='main-header__pages'>
+              <a href="./contact.html">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </nav>
 
-      <div class='main-header-mobile'>
-        <div>
-          <h1>Travels</h1>
+        <div class='main-header-mobile'>
+          <div>
+            <h1>Travels</h1>
+          </div>
+          <div>
+            <a id='menu__mobile'>
+              Menu
+            </a>
+          </div>
         </div>
-        <div>
-          <a href="#menuMobile">
-            Menu
-          </a>
-        </div>
-      </div>
-  </header>
+    </header>
 
-<!-- ------------------------- End header -------------------------------------- -->
+  <!-- ------------------------- End header -------------------------------------- -->
 <!-- ------------------------- End header -------------------------------------- -->
 
 
@@ -116,8 +138,31 @@
         Find your favorite activities and make you travel the best experience of your life.
       </p>
 
-      <div>
-        Slider
+      <div class='activities__slider container-row container-center'>
+        <div class='slider--item container-center'>
+          <figure>
+            <img src="Assets/Images/GirlVanTravel.jpeg" alt="Travel with Adventure for curious souls">
+            <figcaption>
+              Adventure
+            </figcaption>
+          </figure>
+        </div>
+        <div class='slider--item'>
+          <figure>
+            <img src="Assets/Images/twoPersonsCascade.jpg" alt="Travel with Adventure for curious souls">
+            <figcaption>
+              Relax
+            </figcaption>
+          </figure>
+        </div>
+        <div class='slider--item'>
+          <figure>
+            <img src="Assets/Images/PersonDiving.jpg" alt="Travel with Adventure for curious souls">
+            <figcaption>
+              Breath
+            </figcaption>
+          </figure>
+        </div>
       </div>
     </article>
 
@@ -126,6 +171,14 @@
       <figure class='container__travel--img'>
           <img src="Assets/Images/BoatOnTheBeach.jpeg" alt="">
       </figure>
+
+      <div class='background-white container-center' id='container__travel--info-mobile'>
+        <a href="">
+          <p>
+            Take a moment for yourself, take a momento for live, start your travel.
+          </p>
+        </a>
+      </div>
 
       <article class='container-center' id='container__travel--info'>
         <div class='container-center container-column'>
@@ -170,18 +223,54 @@
   
 <!-- ------------------------- Start Footer Section -------------------------------------- -->
 <!-- ------------------------- Start Footer Section -------------------------------------- -->
-  <footer>
-    <h3></h3>
+  <footer id='footer' class='container-column background-black container-center container__footer '>
+    <h3>Contact Us</h3>
 
-    <nav></nav>
-    <address></address>
-    <div></div>
-    <small></small>
+    <article class='container-row container-center container-top container__footer--info'>
+      <nav class='container-column'>
+        <h4>Navigation</h4>
+        <ul class='container-column container-left'>
+          <li> <a href="">Home</a> </li>
+          <li> <a href="">Places</a> </li>
+          <li> <a href="">Activities</a> </li>
+          <li> <a href="">About Us</a>  </li>
+          <li> <a href="">About Places</a>  </li>
+        </ul>
+      </nav>
+
+      <address class='container-column'>
+        <h4>Information</h4>
+        <ul class='container-column container-left'>
+          <li> <a href=""> +57 301 542 2648</a>  </li>
+          <li> <a href=""> booking@mail.com </a> </li>
+          <li> <a href=""> Nuqui, Colombía </a> </li>
+        </ul>
+      </address>
+
+      <div>
+        <span>Red</span>
+        <span>Red</span>
+        <span>Red</span>
+      </div>
+
+      <small>
+        Copyright Booking travel - 2020 | All rights reserved
+      </small>
+    </article>
+
   </footer>
 
 <!-- ------------------------- End Footer Section -------------------------------------- -->
 <!-- ------------------------- End Footer Section -------------------------------------- -->
 
+
+<!-- ------------------------- Start Scripts Section -------------------------------------- -->
+  <!-- ------------------------- Start Scripts Section -------------------------------------- -->
+
+  <script src='Scripts/main.js'></script>
+
+  <!-- ------------------------- Start Scripts Section -------------------------------------- -->
+<!-- ------------------------- Start Scripts Section -------------------------------------- -->
 
 
 </body>

@@ -79,6 +79,54 @@
     height: auto;
   }
 
+  /* Activities slider */
+  .activities__slider{
+    position: relative;
+    width: 100%;
+    min-height: 60vh;
+  }
+
+  .slider--item{
+    position: relative;
+    min-width: 300px;
+    width: 20%;
+    min-height: 300px;
+    height: 300px;
+    object-fit: cover;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .slider--item img{
+    width: 100%;
+    object-fit: cover;
+    filter: blur(5px);
+  }
+
+  .slider--item figcaption{
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 45%;
+    z-index: 100;
+    color: var(--white-color);
+  }
+
+  .slider--item-selected{
+    transform: scale(1.2);
+    z-index: 90;
+  }
+
+  .slider--item-selected img{
+    filter: none !important;
+  }
+
+  .slider--item-noSelected{
+    transform: scale(0.9);
+  }
+
+
+
   /* Container activities */
   #container__activities{
     margin-bottom: var(--big-space);
@@ -88,14 +136,16 @@
   /* Container travel */
   #container__travel{
     width: 100%;
+    min-width: 100%;
+    max-width: 100%;
     position: relative;
-    min-height: 100vh;
     align-items: center;
   }
 
   .container__travel--img{
     position: relative;
     max-width: 40%;
+    object-fit: cover;
   }
   .container__travel--img::before{
     content: '';
@@ -109,6 +159,7 @@
   }
   .container__travel--img img{
     position: relative;
+    object-fit: cover;
     width: 100%;
     z-index: 10;
     box-shadow: 0 0 16px var(--medium-shadow);
@@ -122,6 +173,18 @@
 
   #container__travel--info > div{
     max-width: 70%;
+  }
+
+  #container__travel--info-mobile{
+    display: none;
+    padding: var(--medium-space);
+    max-width: 60%;
+    position: absolute;
+    right: 0;
+    bottom: 10%;
+    border: 1px solid var(--black-color);
+    z-index: 90;
+    border-right: none;
   }
 
   /* Text activities */
@@ -146,29 +209,59 @@
 @media only screen and (max-width: 700px){
 
 /* --------------------------- Start Welcome section ------------------------------- */
-/* --------------------------- Start Welcome section ------------------------------- */
-  #welcome{
-    flex-flow: column nowrap !important;
-  }
+  /* --------------------------- Start Welcome section ------------------------------- */
+    #welcome{
+      flex-flow: column nowrap !important;
+    }
 
-  .welcome__info{
-    max-width: 100%;
-    min-height: auto;
-    padding: var(--large-space);
-  }
+    .welcome__info{
+      max-width: 100%;
+      min-height: auto;
+      padding: var(--large-space);
+    }
 
-  .welcome__video{
-    align-self: flex-end;
-    max-width: 95%;
-    height: auto;
-  }
+    .welcome__video{
+      align-self: flex-end;
+      max-width: 95%;
+      height: auto;
+    }
 
-  .container-video{
-    width: 100%;
-    height: 350px;
-  }
+    .container-video{
+      width: 100%;
+      height: 350px;
+    }
 
+  /* --------------------------- End Welcome section ------------------------------- */
 /* --------------------------- End Welcome section ------------------------------- */
-/* --------------------------- End Welcome section ------------------------------- */
+
+
+
+
+/* --------------------------- Start Activities section ------------------------------- */
+  /* --------------------------- Start Activities section ------------------------------- */
+    #container__travel{
+      width: 80%;
+      max-width: 80%;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+
+    .container__travel--img{
+      width: 80%;
+      max-width: 80%;
+    }
+
+    #container__travel--info{
+      display: none;
+    }
+
+    #container__travel--info-mobile{
+      display: flex;
+    }
+
+  /* --------------------------- End Activities section ------------------------------- */
+/* --------------------------- End Activities section ------------------------------- */
+
+
 
 }
