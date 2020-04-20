@@ -4,23 +4,133 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Booking</title>
+  <link rel="stylesheet" href="./Styles/main.css">
+  <link rel="stylesheet" href="./Styles/booking.css.css">
 </head>
 <body>
-  <header>
-    <nav></nav>
+  <!-- ------------------------- Start header -------------------------------------- -->
+  <!-- ------------------------- Start header -------------------------------------- -->
+
+  <!-- ------------------------- Start Menu -------------------------------------- -->
+  
+
+
+  <header class='main-header container-column'>
+    <menu class='container-center container-column background-black' id='container__menu' opne='close'> 
+      <h2>
+        Navigation
+      </h2>
+  
+      <ul class='container-center container-column'>
+        <li><a href="">Home</a></li>
+        <li><a href="">Booking</a></li>
+        <li><a href="">About Places</a></li>
+        <li><a href="">About Us</a></li>
+        <li><a href="">Contact</a></li>  
+      </ul>
+  
+      <small>
+        Copyright Booking.com
+      </small>
+    </menu>
+      <nav class='main-header__nav'>
+        <ul>
+          <li class='main-header__pages'>
+            <a href="./index.html">
+              Home
+            </a>
+          </li>
+          <li class='main-header__pages'>
+            <a href="./booking.html">
+              Booking
+            </a>
+          </li>
+          <li class='main-header__pages'>
+            <a href="./aboutUs.html">
+              About Us
+            </a>
+          </li>
+          <li class='main-header__pages'>
+            <a href="./aboutPlaces.html">
+              About Places
+            </a>
+          </li>
+          <li class='main-header__pages'>
+            <a href="./contact.html">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class='main-header-mobile'>
+        <div>
+          <h1>Travels</h1>
+        </div>
+        <div>
+          <a id='menu__mobile'>
+            Menu
+          </a>
+        </div>
+      </div>
   </header>
 
-  <main>
-    <article></article>
+<!-- ------------------------- End header -------------------------------------- -->
+<!-- ------------------------- End header -------------------------------------- -->
 
-    <div>
-      <p>
-        <q></q>
-        <i></i>
-      </p>
+<!-- Start section booking -->
+  <!-- Start section booking -->
+    <main id='container__booking' class='container-center container-left container-row'>
+      <article id='booking__container' class='container-center background-white container-column'>
+        <h3>WHAT YOU LOKING FOR?</h3>
+        <p>
+          Describe us the perfect place for you and we'll show you best travels and places for you.
+        </p>
+        <form action="" class='container-left container-column' id='BookingPlaceForm'>  
+          
+          <div class='input-item container-left container-column'>
+            <label for="category">Travel Category</label>
+            <select name="category" id="category">
+              <option value="0">Select a category for you travel.</option>
+            </select>
+          </div>
 
-      <small></small>
-    </div>
-  </main>
+          <div class='input-item container-left container-column'>
+            <label for="people">How Many are with you?</label>
+            <input type="number" name="howMany" id="people" placeholder="Tell us the number of people that are with you.">
+          </div>
+            
+          <div class='input-item container-left container-column'>
+            <label for="datetime_start">When you want start to travel?</label>
+            <input type="date" name="howMany" id="datetime_start">
+          </div>
+
+          <div class='input-item container-left container-column'>
+            <label for="datetime_end">When you want end to travel?</label>
+            <input type="date" name="howMany" id="datetime_end">
+          </div>
+
+            <button class='button__secondary' type="submit" id='button--submit'>
+              Search Travel
+            </button>
+        </form>
+      </article>
+
+      <div class='booking--footer'>
+        <p class='container-column container-center'>
+          <q>Find home, find yourself, it's time to know the world</q>
+            <span>-</span>
+          <i>traveler</i>
+        </p>
+
+        <small>
+          Copyright © Bookings Travel - 2020
+        </small>
+      </div>
+    </main>
+  <!-- End section booking -->
+<!-- End section booking -->
+
+<script src="./Scripts/booking.js"></script>
 </body>
 </html>
