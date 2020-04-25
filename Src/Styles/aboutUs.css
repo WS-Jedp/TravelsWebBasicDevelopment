@@ -1,0 +1,158 @@
+#advantage{
+  position: relative;
+  width: 100%;
+  min-height: 90vh;
+  overflow: hidden;
+  flex-wrap: wrap-reverse;
+  padding: var(--normal-space);
+}
+
+.advantage__image{
+  position: relative;
+  width: 50%;
+}
+.advantage__image--img{
+  position: relative;
+  width: 90%;
+  height: 90%;
+  overflow: hidden;
+  box-shadow: 0 0 32px var(--light-shadow);
+  object-fit: cover;
+}
+.advantage__image--img img{
+  width: 100%;
+  height: 100%;
+}
+
+.advantage__info{
+  position: relative;
+  width: 50%;
+}
+
+.advantage__info p{
+  max-width: 90%;
+  margin: var(--normal-space)
+}
+
+.icon-circle{
+  width: 80px;
+  height: 80px;
+  border: 1px solid var(--main-color);
+  border-radius: 50%;
+  margin: var(--normal-space);
+}
+
+/* --------------------- Our Team Section Start --------------------- */
+  /* --------------------- Our Team Section Start --------------------- */
+
+  #our-team{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: var(--normal-space);
+  }
+
+  .our-team__cards-container{
+    position: relative;
+    width: 100%;
+    height: 80%;
+  }
+
+  .our-team__card{
+    position: relative;
+    min-width: 300px;
+    width: 300px;
+    max-width: 25%;
+    min-height: 400px;
+    height: 400px;
+    margin: var(--normal-space);
+  }
+
+  .our-team__card--img{
+    position: relative;
+    width: 100%;
+    height: 90%;
+    overflow: hidden;
+  }
+  .our-team__card--img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: bottom;
+  }
+  .our-team__card figcaption{
+    padding: var(--small-space);
+    color: var(--white-color);
+  }
+
+  /* --------------------- Our Team Section End --------------------- */
+/* --------------------- Our Team Section End --------------------- */
+
+/* --------------------- Values Section Start --------------------- */
+  /* --------------------- Values Section Start --------------------- */
+    #values{
+      position: relative;
+      width: 100%;
+      min-height: 100vh;
+    }
+
+    .values__info{
+      width: 100%;
+      height: 600px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .values__info--purpose{
+      flex-wrap: wrap;
+    }
+    .values__info--vision{
+      flex-wrap: wrap-reverse;
+    }
+
+    .values__info--text{
+      width: 50%;
+      max-width: 50%;
+      padding: var(--big-space);
+    }
+
+    .values__info--img{
+      position: relative;
+      width: 50%;
+      height: 100%;
+    }
+    .values__info--img img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  /* --------------------- Values Section End --------------------- */
+/* --------------------- Values Section End --------------------- */
+
+@media only screen and (max-width: 700px){
+
+
+
+  .advantage__image{
+    width: 80%;
+  }
+  .advantage__info{
+    width: 100%;
+  }
+
+  .our-team__card{
+    min-width: 164px;
+    min-height: 240px;
+    height: 280px;
+  }
+
+  .values__info--text{
+    width: 100%;
+  }
+  .values__info--img{
+    width: 100%;
+  }
+  
+} 

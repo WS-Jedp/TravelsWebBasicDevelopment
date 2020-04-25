@@ -30,17 +30,8 @@
       position: relative;
       display: flex;
       width: 100%;
-      height: 80%;
-      box-shadow: 0 0 32px var(--medium-shadow);
-    }
-    .container-video::before{
-      content: '';
-      position: absolute;
-      width: 95%;
       height: 100%;
-      background-color: var(--secondary-color);
-      right: 0;
-      top: -16px;
+      box-shadow: 0 0 64px var(--medium-shadow);
     }
 
 
@@ -147,28 +138,22 @@
     max-width: 40%;
     object-fit: cover;
   }
-  .container__travel--img::before{
-    content: '';
-    position: absolute;
-    top: -32px;
-    left: 0;
-    width: 95%;
-    height: 100%;
-    z-index: 10;
-    background-color: var(--secondary-color);
-  }
+
   .container__travel--img img{
     position: relative;
     object-fit: cover;
     width: 100%;
     z-index: 10;
-    box-shadow: 0 0 16px var(--medium-shadow);
+    box-shadow: 0 0 32px var(--light-shadow);
   }
 
   #container__travel--info{
     max-width: 60%;
     justify-content: center;
     align-items: center;
+  }
+  #container__travel--info p{
+    margin: var(--medium-space);
   }
 
   #container__travel--info > div{
