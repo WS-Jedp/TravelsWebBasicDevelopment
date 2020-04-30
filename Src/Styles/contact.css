@@ -1,0 +1,80 @@
+#contact__container{
+  position: relative;
+  align-items: center;
+  max-width: 100%;
+  min-height: 100vh;
+  flex-wrap: wrap-reverse;
+}
+
+#contact__container--info{
+  position: relative;
+  width: 50%;
+  max-width: 50%;
+  align-self: center;
+}
+
+#message-contact{
+  position: absolute;
+  width: 100%;
+  top: 1rem;
+  left: 5rem;
+  transform-origin: 0 0;
+  transform: rotate(90deg);
+  color: var(--secondary-color);
+  font-size: 5rem;
+}
+
+.container--info-contact{
+  width: 70%;
+  background-color: white;
+  padding: var(--normal-space);
+  padding-left: var(--big-space);
+}
+
+.container--info-contact h2{
+  margin-bottom: var(--normal-space);
+}
+
+.container--info-contact strong{
+  font-weight: bolder;
+}
+
+.container--info-contact ul li {
+  padding: var(--small-space);
+  padding-left: var(--normal-space);
+}
+
+.container--info-contact-copyright{
+  padding-left: var(--big-space);
+}
+
+
+/* Form */
+#contact__container--form{
+  width: 50%;
+  max-width: 50%;
+}
+
+#contact__container--form p{
+  margin: var(--normal-space) 0;
+}
+
+#contact__container--form input{
+  margin: var(--medium-space) 0;
+}
+
+#contact__container--form button{
+  margin: var(--medium-space) 0;
+}
+
+@media screen and (max-width:700px){
+  #contact__container--info{
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #contact__container--form{
+    width: 100%;
+    max-width: 100%;
+  }
+}

@@ -3,20 +3,134 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Styles/contact.css">
   <title>Contact</title>
 </head>
-<body>
-  <header></header>
+<body class='background-black '>
+   <!-- --------------- Start header ----------------- -->
+    <!-- --------------- Start header ----------------- -->
+    <header class='secondary-header container-column'>
+      <menu class='container-center container-column background-black' id='container__menu' opne='close'> 
+        <h2>
+          Navigation
+        </h2>
+    
+        <ul class='container-center container-column'>
+          <li><a href="">Home</a></li>
+          <li><a href="">Booking</a></li>
+          <li><a href="">About Places</a></li>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Contact</a></li>  
+        </ul>
+    
+        <small>
+          Copyright Booking.com
+        </small>
+      </menu>
+        <nav class='main-header__nav'>
+          <ul class=''>
+            <li class='main-header__pages'>
+              <a href="./index.html">
+                Home
+              </a>
+            </li>
+            <li class='main-header__pages'>
+              <a href="./booking.html">
+                Booking
+              </a>
+            </li>
+            <li class='main-header__pages'>
+              <a href="./aboutUs.html">
+                About Us
+              </a>
+            </li>
+            <li class='main-header__pages'>
+              <a href="./aboutPlaces.html">
+                About Places
+              </a>
+            </li>
+            <li class='main-header__pages'>
+              <a href="./contact.html">
+                Contact
+              </a>
+            </li>
+            <li class='main-header__pages'>
+              <a href="./contact.html">
+                Login
+              </a>
+            </li>
+          </ul>
+          
+        </nav>
 
-  <section>
-    <h2></h2>
-    <address></address>
+        <div class='main-header-mobile'>
+          <div>
+            <h1>Travels</h1>
+          </div>
+          <div>
+            <a id='menu__mobile'>
+              Menu
+            </a>
+          </div>
+        </div>
+    </header>
+  <!-- --------------- End header ----------------- -->
+<!-- --------------- End header ----------------- -->
 
-    <address></address>
-    <small></small>
+  <section class='container-row' id='contact__container'>
+
+    <article id='contact__container--info'>
+      <div class='container--info-contact container-column'>
+        <span id='message-contact'>
+          TALK WITH US!
+        </span>
+        <h2>CONTACT US</h2>
+        <address class='container-left container-column'>
+          <strong>
+            Navigation
+          </strong>
+          <ul>
+            <li>Home</li>
+            <li>About Us</li>
+            <li>About Places</li>
+            <li>Activities</li>
+          </ul>
+        </address>
+        <address class='container-left container-column'>
+          <strong>
+            Information
+          </strong>
+          <ul>
+            <li>+57 350 458 26</li>
+            <li>bookings@booking.com</li>
+            <li>Nuqui, Colombia</li>
+          </ul>
+        </address>
+      </div>
+
+      <div class='container-column container--info-contact-copyright'>
+          
+        <small>Social Media</small>
+        <small>Copyright © Bookings Travel - 2020 | All rights reserved</small>
+      </div>
+    </article>
+
+    <article id='contact__container--form'>
+      <h2>WHY TRAVELS WITH US?</h2>
+      <p>
+        Travel with us not only brings to you a beautiful experience, also brings to you a new way to see life, to live life.
+      </p>
+      <form action="" class='container-column container-left'>
+        <input type="email" placeholder="Tell us your email.">
+        <textarea name="" id="" cols="30" rows="10" placeholder="Write us your message"></textarea>
+        <button class='button__primary' type="submit">
+          Send!
+        </button>
+      </form>
+    </article>
+    
   </section>
 
-  <article></article>
   
 </body>
 </html>

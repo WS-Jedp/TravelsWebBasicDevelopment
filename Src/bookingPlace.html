@@ -3,17 +3,141 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Styles/bookingPlace.css">
   <title>Booking Place</title>
 </head>
 <body>
-  <header>
+  
+<!-- ------------------------- Start header -------------------------------------- -->
+  <!-- ------------------------- Start header -------------------------------------- -->
 
+  <!-- ------------------------- Start Menu -------------------------------------- -->
+  
+
+
+  <header class='main-header container-column'>
+
+    <menu class='container-center container-column background-black' id='container__menu' opne='close'> 
+      <h2>
+        Navigation
+      </h2>
+  
+      <ul class='container-center container-column'>
+        <li><a href="">Home</a></li>
+        <li><a href="">Booking</a></li>
+        <li><a href="">About Places</a></li>
+        <li><a href="">About Us</a></li>
+        <li><a href="">Contact</a></li>  
+      </ul>
+  
+      <small>
+        Copyright Booking.com
+      </small>
+    </menu>
+
+      <nav class='main-header__nav container-row'>
+        <ul>
+          <li class='main-header__pages'>
+            <a href="./index.html">
+              Home
+            </a>
+          </li>
+          <li class='main-header__pages'>
+            <a href="./booking.html">
+              Booking
+            </a>
+          </li>
+          <li class='main-header__pages'>
+            <a href="./aboutUs.html">
+              About Us
+            </a>
+          </li>
+          <li class='main-header__pages'>
+            <a href="./aboutPlaces.html">
+              About Places
+            </a>
+          </li>
+          <li class='main-header__pages'>
+            <a href="./contact.html">
+              Contact
+            </a>
+          </li>
+        </ul>
+        
+          <a href="login.html">Login</a>
+      </nav>
+
+      <div class='main-header-mobile'>
+        <div>
+          <h1>Travels</h1>
+        </div>
+        <div>
+          <a id='menu__mobile'>
+            Menu
+          </a>
+        </div>
+      </div>
   </header>
-  <main>
-    <div>
-      <article></article>
-      <section></section>
-    </div>
+
+<!-- ------------------------- End header -------------------------------------- -->
+<!-- ------------------------- End header -------------------------------------- -->
+
+  <main class='container-center' id='booking-place__container'>
+    <section class='booking-place__container--places background-white container-row'>
+
+      <article class='booking-place__filter container-column background-white'>
+        <h4>Find the perfect place</h4>
+        <hr>
+        <form action="" class='container-column container-left'>
+          <label for="place">Find the place that you want</label>
+          <input type="text" name='place' id='place' placeholder="Name of the place">
+          <hr>
+          <label for="activities">
+            <h3>Activities</h3>
+          </label>
+          <div>
+            <input type="checkbox" name="" id="">
+            Adventure
+          </div>
+          <div>
+            <input type="checkbox" name="" id="">
+            Surf
+          </div>
+          <div>
+            <input type="checkbox" name="" id="">
+            Walk
+          </div>
+
+          <hr>
+
+          <label for="activities">
+            <h3>Categories</h3>
+          </label>
+          <div>
+            <input type="checkbox" name="" id="">
+            Adventure
+          </div>
+          <div>
+            <input type="checkbox" name="" id="">
+            Surf
+          </div>
+          <div>
+            <input type="checkbox" name="" id="">
+            Walk
+          </div>
+        </form>
+
+        <small>Copyright © Bookings Travel - 2020</small>
+      </article>
+
+      <article class='booking-place__results container-column container-left'>
+        <h2>WHAT YOU LOOKING FOR?</h2>
+        <p>
+          Describe us the perfect travel for you and we will show you the best places for you.
+        </p>
+      </article>
+
+    </section>
   </main>
 </body>
 </html>

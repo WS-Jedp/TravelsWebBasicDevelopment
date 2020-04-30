@@ -8,43 +8,251 @@
 </head>
 <body>
   
-  <header></header>
+<!-- --------------- Start header ----------------- -->
+  <!-- --------------- Start header ----------------- -->
+    <header class='secondary-header container-column'>
+      <menu class='container-center container-column background-black' id='container__menu' opne='close'> 
+        <h2>
+          Navigation
+        </h2>
+    
+        <ul class='container-center container-column'>
+          <li><a href="">Home</a></li>
+          <li><a href="">Booking</a></li>
+          <li><a href="">About Places</a></li>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Contact</a></li>  
+        </ul>
+    
+        <small>
+          Copyright Booking.com
+        </small>
+      </menu>
+        <nav class='main-header__nav'>
+          <ul class=''>
+            <li class='main-header__pages'>
+              <a href="./index.html">
+                Home
+              </a>
+            </li>
+            <li class='main-header__pages'>
+              <a href="./booking.html">
+                Booking
+              </a>
+            </li>
+            <li class='main-header__pages'>
+              <a href="./aboutUs.html">
+                About Us
+              </a>
+            </li>
+            <li class='main-header__pages'>
+              <a href="./aboutPlaces.html">
+                About Places
+              </a>
+            </li>
+            <li class='main-header__pages'>
+              <a href="./contact.html">
+                Contact
+              </a>
+            </li>
+            <li class='main-header__pages'>
+              <a href="./contact.html">
+                Login
+              </a>
+            </li>
+          </ul>
+          
+        </nav>
 
-  <main>
-    <article></article>
-    <article></article>
-    <article></article>
+        <div class='main-header-mobile'>
+          <div>
+            <h1>Travels</h1>
+          </div>
+          <div>
+            <a id='menu__mobile'>
+              Menu
+            </a>
+          </div>
+        </div>
+    </header>
+  <!-- --------------- End header ----------------- -->
+<!-- --------------- End header ----------------- -->
+
+<!-- --------------- Start Main Activities ----------------- -->
+  <!-- --------------- Start Main Activities ----------------- -->
+    <main id='main_activities-container'>
+      <figure class='container-bottom container-column container-right container-activity' id='main-activity'>
+        <div class='overlay container-center'>
+          <button class='button__primary'>See more</button>
+        </div>
+        <img src="Assets/Images/teamBeach.jpg" alt="">
+        <h2>Beach Nuqui</h2>
+      </figure>
+
+      <figure class='container-bottom container-column container-right container-activity' id='secondary-activity'>
+        <div class='overlay container-center'>
+          <button class='button__primary'>See more</button>
+        </div>
+        <img src="Assets/Images/manAloneBackpack.jpg" alt="">
+        <h2>Cold Adventure</h2>
+      </figure>
+
+      <figure class='container-bottom container-column container-right container-activity' id='third-activity'>
+        <div class='overlay container-center'>
+          <button class='button__primary'>See more</button>
+        </div>
+        <img src="Assets/Images/manAloneNature.jpg" alt="">
+        <h2>Jungle</h2>
+      </figure>
+    </main>
+  <!-- --------------- End Main Activities ----------------- -->
+<!-- --------------- End Main Activities ----------------- -->
+
+<!-- --------------- Start Features Travels ----------------- -->
+  <!-- --------------- Start Features Travels ----------------- -->
+  <section class='container-row container-center background-white' id='features-travel__container'>
+    <div class='container-center container-column features-travel__container--info'>
+      <h2>
+        KNOW OUR TRAVELS
+      </h2>
+  
+      <p>
+        Travel with us not only brings to you a beautiful experience, also brings to you a new way to see life, to live life.
+      </p>
+    </div>
+    <div class='container-center container-row features-travel__container--features'>
+      <div>
+        <div class='icon-circle'></div>
+        <h4>Jungle</h4>
+      </div>
+      <div>
+        <div class='icon-circle'></div>
+        <h4>Adventure</h4>
+      </div>
+      <div>
+        <div class='icon-circle'></div>
+        <h4>Beach</h4>
+      </div>
+    </div>
+  </section>
+  <!-- --------------- End Main Activities ----------------- -->
+<!-- --------------- End Main Activities ----------------- -->
+
+
+<!-- --------------- Start Our Experiences ----------------- -->
+  <!-- --------------- Start Our Experiences ----------------- -->
+    <section class='container-center container-column' id='our_experiences'>
+      <div class='contianer-center container-column our_experiences--info'>
+        <h2>OUR EXPERIENCES</h2>
+        <p>We count with the necessary experience for every traveler, thanks big part for our teams working together.</p>
+      </div>
+
+      <div id='our_experiences--images'>
+        <figure class='our_experiences-img' id='image-one'>
+          <img src="Assets/Images/teamBeach.jpg" alt="">
+        </figure>
+        <figure class='our_experiences-img' id='image-two'>
+          <img src="Assets/Images/boatJungle.jpeg" alt="">
+        </figure>
+        <figure class='our_experiences-img' id='image-three'>
+          <img src="Assets/Images/GirlVanTravel.jpeg" alt="">
+        </figure>
+        <figure class='our_experiences-img' id='image-four'>
+          <img src="Assets/Images/twoPersonsCascade.jpg" alt="">
+        </figure>
+        <figure class='our_experiences-img' id='image-five'>
+          <img src="Assets/Images/memotryBeachBW.jpg" alt="">
+        </figure>
+      </div>
+    </section>
+  <!-- --------------- Start Our Experiences ----------------- -->
+<!-- --------------- Start Our Experiences ----------------- -->
+
+<!-- ------------------------- Main Section Start -------------------------------------- -->
+  <!-- ------------------------- Main Section Start -------------------------------------- -->
+
+  <main class='container-about container-row' id='container-about-us'>
+    <article class='about__info container-column container-left'>
+      <div class="background-black about__info--title">
+        <h2>
+          About Us
+        </h2>
+      </div>
+
+      <div class='about__info--text'>
+        <h4>Who we are?</h4>
+        <p>
+          We are a new way of travels. 
+          Welcome to future of travel, we not only give the best experiences for you, also we give the way for know yourself.
+        </p>
+      </div>
+
+      <div class='about__info--text'>
+        <h4>Our travels</h4>
+        <p>
+          All our travels are perfect for travels and for the nature of our world.
+          We are 100% eco-friendly making the travel a new way to help the society and the world.
+        </p>
+      </div>
+
+
+      <a href="" class='about__info--action'>
+        <small>
+          Go Down
+        </small>
+      </a>
+      
+    </article>
+
+    <section class='about__audiovisual' id='about-us__audiovisual'>
+      <figure class='about-us__audiovisual--video'>
+        <video src="Assets/videos/CalmSurf.mp4" width="100%" height="100%" autoplay muted></video>
+      </figure>
+    </section>
   </main>
+<!-- ------------------------- Main Section End -------------------------------------- -->
+<!-- ------------------------- Main Section End -------------------------------------- -->
 
-  <section></section>
+<!-- ------------------------- Start Footer Section -------------------------------------- -->
+  <!-- ------------------------- Start Footer Section -------------------------------------- -->
+    <footer id='footer' class='container-column background-black container-center container__footer '>
+      <h3>Contact Us</h3>
 
-  <section>
-    <h2></h2>
-    <p></p>
+      <article class='container-row container-center container-top container__footer--info'>
+        <nav class='container-column'>
+          <h4>Navigation</h4>
+          <ul class='container-column container-left'>
+            <li> <a href="">Home</a> </li>
+            <li> <a href="">Places</a> </li>
+            <li> <a href="">Activities</a> </li>
+            <li> <a href="">About Us</a>  </li>
+            <li> <a href="">About Places</a>  </li>
+          </ul>
+        </nav>
 
-    <div>
-      <figure></figure>
-      <figure></figure>
-      <figure></figure>
-      <figure></figure>
-    </div>
-  </section>
+        <address class='container-column'>
+          <h4>Information</h4>
+          <ul class='container-column container-left'>
+            <li> <a href=""> +57 301 542 2648</a>  </li>
+            <li> <a href=""> booking@mail.com </a> </li>
+            <li> <a href=""> Nuqui, Colombía </a> </li>
+          </ul>
+        </address>
 
-  <section>
-    <article></article>
-    <div>
-      <video src=""></video>
-    </div>
-  </section>
+        <div>
+          <span>Red</span>
+          <span>Red</span>
+          <span>Red</span>
+        </div>
 
-  <footer>
-    <h3></h3>
+        <small>
+          Copyright Booking travel - 2020 | All rights reserved
+        </small>
+      </article>
 
-    <nav></nav>
-    <address></address>
-    <div></div>
-    <small></small>
-  </footer>
+    </footer>
+  <!-- ------------------------- End Footer Section -------------------------------------- -->
+<!-- ------------------------- End Footer Section -------------------------------------- -->
 
   <script src="app.js"></script>
 <script src="scripts/app.js"></script></body>
