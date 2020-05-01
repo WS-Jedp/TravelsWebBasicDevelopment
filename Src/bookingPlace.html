@@ -84,11 +84,12 @@
 
   <main class='container-center' id='booking-place__container'>
     <section class='booking-place__container--places background-white container-row'>
-
-      <article class='booking-place__filter container-column background-white'>
+      
+      <!-- ------------------------- Start Filters -------------------------------------- -->
+      <article class='booking-place__filter container-column'>
         <h4>Find the perfect place</h4>
         <hr>
-        <form action="" class='container-column container-left'>
+        <form action="" class='container-column container-left' id='form-filter__activity'>
           <label for="place">Find the place that you want</label>
           <input type="text" name='place' id='place' placeholder="Name of the place">
           <hr>
@@ -97,15 +98,21 @@
           </label>
           <div>
             <input type="checkbox" name="" id="">
-            Adventure
+            <small>
+              Adventure
+            </small>
           </div>
           <div>
             <input type="checkbox" name="" id="">
-            Surf
+            <small>
+              Surf
+            </small>
           </div>
           <div>
             <input type="checkbox" name="" id="">
-            Walk
+            <small>
+              Walk
+            </small>
           </div>
 
           <hr>
@@ -115,26 +122,165 @@
           </label>
           <div>
             <input type="checkbox" name="" id="">
-            Adventure
+            <small>
+              Adventure
+            </small>
           </div>
           <div>
             <input type="checkbox" name="" id="">
-            Surf
+            <small>
+              Surf
+            </small>
           </div>
           <div>
             <input type="checkbox" name="" id="">
-            Walk
+            <small>
+              Walk
+            </small>
           </div>
+          <small>Copyright © Bookings Travel - 2020</small>
         </form>
-
-        <small>Copyright © Bookings Travel - 2020</small>
       </article>
+      <!-- ------------------------- End Filters -------------------------------------- -->
 
+
+      <!-- ------------------------- Start Results -------------------------------------- -->
       <article class='booking-place__results container-column container-left'>
-        <h2>WHAT YOU LOOKING FOR?</h2>
-        <p>
-          Describe us the perfect travel for you and we will show you the best places for you.
-        </p>
+
+        <!--  -->
+        <div class='results--info'>
+          <h2>WHAT YOU LOOKING FOR?</h2>
+          <p>
+            Describe us the perfect travel for you and we will show you the best places for you.
+          </p>
+        </div>
+        <!--  -->
+
+        <!--  -->
+        <div class='results--places container-column container-left'>
+          <div class='container-row container-center places--title'>
+            <h4>Results <small>+100</small> </h4> 
+            <span id='filter__action'>Search</span>
+          </div>
+          <hr>
+
+          <section class='places'>
+            <!-- Start of the place -->
+            <div class='place__container container-row container-center'>
+              <!-- Image of the place -->
+              <figure class='place__container--image'>
+                <img src="Assets/Images/BeachAndSea.jpeg" alt="">
+              </figure>
+
+              <!-- Start of the main info about the place -->
+              <div class='place__container--info container-column container-left'>
+                <small>Available</small>
+                <a href="placeDetail.html">
+                  <h2>Cabaña Terco</h2>
+                </a>
+                <div class='place__container--features container-left'>
+                  <ul class='list--place'>
+                    <strong>Features</strong>
+                    <li>5 Beds</li>
+                    <li>3 Persons</li>
+                  </ul>
+                  <ul class='list--place'>
+                    <strong>Categories</strong>
+                    <li>Adventure</li>
+                    <li>Beach</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Start of price of the place -->
+              <div class='place__container--actions'>
+                <strong>199.999$</strong>
+                <div class='place--actions'>
+                  <a href="">Booking!</a>
+                  <a href="">See more</a>
+                </div>
+              </div>
+
+            </div>
+            <!-- End of the card place -->
+
+            <!-- Start of the place -->
+            <div class='place__container container-row container-center'>
+              <!-- Image of the place -->
+              <figure class='place__container--image'>
+                <img src="Assets/Images/BeachAndSea.jpeg" alt="">
+              </figure>
+
+              <!-- Start of the main info about the place -->
+              <div class='place__container--info container-column container-left'>
+                <small>Available</small>
+                <h2>Cabaña Terco</h2>
+                <div class='place__container--features container-left'>
+                  <ul class='list--place'>
+                    <strong>Features</strong>
+                    <li>5 Beds</li>
+                    <li>3 Persons</li>
+                  </ul>
+                  <ul class='list--place'>
+                    <strong>Categories</strong>
+                    <li>Adventure</li>
+                    <li>Beach</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Start of price of the place -->
+              <div class='place__container--actions'>
+                <strong>199.999$</strong>
+                <div class='place--actions'>
+                  <a href="">Booking!</a>
+                  <a href="">See more</a>
+                </div>
+              </div>
+
+            </div>
+            <!-- End of the card place -->
+
+            <!-- Start of the place -->
+            <div class='place__container container-row container-center'>
+              <!-- Image of the place -->
+              <figure class='place__container--image'>
+                <img src="Assets/Images/BeachAndSea.jpeg" alt="">
+              </figure>
+
+              <!-- Start of the main info about the place -->
+              <div class='place__container--info container-column container-left'>
+                <small>Available</small>
+                <h2>Cabaña Terco</h2>
+                <div class='place__container--features container-left'>
+                  <ul class='list--place'>
+                    <strong>Features</strong>
+                    <li>5 Beds</li>
+                    <li>3 Persons</li>
+                  </ul>
+                  <ul class='list--place'>
+                    <strong>Categories</strong>
+                    <li>Adventure</li>
+                    <li>Beach</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Start of price of the place -->
+              <div class='place__container--actions'>
+                <strong>199.999$</strong>
+                <div class='place--actions'>
+                  <a href="">Booking!</a>
+                  <a href="">See more</a>
+                </div>
+              </div>
+
+            </div>
+            <!-- End of the card place -->
+
+          </section>
+
+        </div>
       </article>
 
     </section>

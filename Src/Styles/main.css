@@ -57,6 +57,7 @@
     --main-color: #461D2C;
     --secondary-color: #A0734C;
     --light-color: #FEF6EF;
+    --card-color: #C39D77;
 
     /* Sizes */
       /* Spaces */
@@ -360,6 +361,37 @@
   }
 
 /* End header */
+
+/* Start filter form */
+.booking-place__filter{
+  position: static;
+  width: 30%;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: white;
+  padding: var(--normal-space);
+  box-shadow: 0 0 16px var(--light-shadow);
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+.booking-place__filter hr{
+  width: 100%;
+  height: .4px;
+  border: .4px solid var(--secondary-color);
+  margin: var(--medium-space) 0;
+}
+
+#form-filter__activity h3{
+  color: var(--black-color);
+  font-size: 2.6rem;
+}
+
+#form-filter__activity input, #form-filter__activity small{
+  font-size: 1.8rem;
+  margin: var(--medium-space);
+}
+
+/* End filter form */
 
 
 /* --------------------------- Start Travel section ------------------------------- */

@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   height: 92vh;
-  overflow: hidden;
+  max-height: 92vh;
   background-image: url('../Assets/Images/manAloneBackpack.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -12,9 +12,211 @@
 
 .booking-place__container--places{
   min-width: 90%;
+  width: 90%;
+  max-width: 90%;
   min-height: 90%;
+  height: 90%;
+  max-height: 90%;
   z-index: 100;
   border: 1px solid var(--black-color);
   box-shadow: 0 0 32px var(--medium-shadow);
   position: relative;
+  padding: var(--normal-space);
+  overflow: hidden;
+}
+
+
+/* ------------- Start Results -------------- */
+  /* ------------- Start Results -------------- */
+
+  .booking-place__results{
+    min-width: 65%;
+    width: 65%;
+    max-width: 65%;
+    height: 700px;
+    padding: 0 var(--normal-space);
+    align-items: flex-start;
+    text-align: left;
+    overflow: hidden;
+    flex-wrap: nowrap;
+  }
+
+  .results--info{
+    margin-bottom: var(--normal-space);
+  }
+
+  .results--places{
+    position: relative;
+    width: 100%;
+  }
+
+  .results--places hr{
+    width: 100%;
+  }
+
+  /* ------------- End Results -------------- */
+/* ------------- End Results -------------- */
+
+
+/* ------------- Start Places -------------- */
+  /* ------------- Start Places -------------- */
+.places{
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow-y: scroll; 
+  padding: var(--normal-space);
+  display: grid;
+  grid-template-columns: repeat(1, minmax(300px, 1fr));
+  grid-auto-flow: row;
+  grid-auto-rows: minmax(180px, 1fr);
+  grid-gap: var(--normal-space);
+}
+
+.place__container{
+  width: 100%;
+  min-height: 180px;
+  height: 180px;
+  max-height: 180px;
+  box-sizing: border-box;
+  padding: var(--small-space);
+  background-color: var(--white-color);
+  box-shadow: 0 0 16px var(--light-shadow);
+  margin-bottom: var(--normal-space);
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.place__container--image{
+  position: relative;
+  min-width: 150px;
+  width: 25%;
+  max-width: 25%;
+  min-height: 150px;
+  height: 65%;
+  max-height: 65%;
+  background-color: salmon;
+  box-shadow: 0 0 8px var(--light-shadow);
+}
+
+.place__container--image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.place__container--info{
+  width: 45%;
+  font-size: 1.6rem;
+  padding: var(--normal-space);
+}
+.place__container--info h2{
+  width: 100%;
+  text-align: left;
+  margin: var(--medium-space) 0;
+}
+.place__container--info small{
+  font-size: var(--text-button);
+}
+
+.place__container--info strong{
+  font-size: 2rem;
+}
+.list--place{
+  margin-right: var(--large-space);
+}
+.place__container--info ul li{
+  font-size: var(--text-button);
+  text-align: left;
+}
+
+.place__container--actions{
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: var(--normal-space);
+}
+
+.place__container--actions strong{
+  color: var(--blue-color);
+  font-size: var(--text-subtitle);
+  font-weight: bold;
+}
+
+.place--actions a{
+  font-size: var(--text-button);
+  margin-right: var(--normal-space);
+}
+
+
+.places--title{
+  width: 100%;
+  justify-content: space-between;
+}
+
+#filter__action{
+  cursor: pointer;
+  display: none;
+}
+
+  /* ------------- Start Places -------------- */
+/* ------------- Start Places -------------- */
+
+
+/* Responsive */
+@media screen and (max-width: 1000px){
+  .booking-place__filter{
+    display: none;
+  }
+
+  .booking-place__results{
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #filter__action{
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 700px){
+  .place{
+    grid-auto-rows: minmax(450px, 1fr);
+  }
+  .place__container{
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .place__container--image{
+    position: relative;
+    min-width: 120px;
+    width: 20%;
+    max-width: 20%;
+    min-height: 120px;
+    height: 50%;
+    max-height: 50%;
+  }
+
+  .place__container--info{
+    width: 60%;
+    font-size: 1.6rem;
+    padding: var(--normal-space);
+  }
+  .place__container--info h2{
+    width: 100%;
+    text-align: left;
+    margin: var(--small-space) 0;
+  }
+  .list--place{
+    margin-right: var(--normal-space);
+  }
+
+  .place__container--actions{
+    display: none;
+  }
 }

@@ -1,0 +1,69 @@
+#place-detail__container{
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: 92vh;
+  max-height: 92vh;
+  overflow: hidden;
+  flex-wrap: nowrap;
+}
+
+#place-detail__filter{
+  position: sticky;
+  width: 30%;
+  max-width: 30%;
+  padding: var(--large-space);
+  
+}
+
+#place-detail__filter .booking-place__filter{
+  width: 100%;
+}
+
+#place-detail__info{
+  position: relative;
+  width: 70%;
+  max-width: 70%;
+  height: 82%;
+  padding: var(--large-space);
+}
+
+#place-detail__info--place{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: var(--normal-space) 0;
+}
+
+.place-detail__info--img{
+  position: relative;
+  width: 100%;
+  height: 250px;
+  max-height: 250px;
+  background-color: salmon;
+  margin: var(--normal-space) 0;
+}
+
+.place-detail__info--img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.place-detail__info--img figcaption{
+  position: absolute;
+  left: var(--normal-space);
+  bottom: var(--normal-space);
+}
+.place-detail__info--img figcaption h1{
+  color: var(--white-color);
+}
+
+@media screen and (max-width: 1000px){
+  #place-detail__info{
+    width: 100%;
+    max-width: 100%;
+  }
+}
