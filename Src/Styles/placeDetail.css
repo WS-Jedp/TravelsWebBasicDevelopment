@@ -8,6 +8,10 @@
   flex-wrap: nowrap;
 }
 
+#place-detail__info h3, #place-detail__info h4{
+  color: var(--black-color);
+}
+
 #place-detail__filter{
   position: sticky;
   width: 30%;
@@ -61,8 +65,71 @@
   color: var(--white-color);
 }
 
+/* ---------------- Lists ------------------ */
+
+.place-detail__info--lists{
+  margin: var(--normal-space) 0;
+}
+
+.info--list{
+  margin: var(--normal-space);
+}
+
+.info--list ul li{
+  margin: var(--medium-space) 0;
+}
+
+/* --------------- Features --------------- */
+.place-detail__info--features{
+  position: relative;
+  width: 100%;
+  justify-content: space-around;
+  padding: var(--medium-space);
+}
+
+
+/* ------------- contact --------------- */
+.place-detail__info--contact{
+  padding: var(--normal-space);
+}
+
+.place-detail__info--contact > *{
+  margin: var(--medium-space) 0; 
+}
+
+.contact--list strong{
+  font-style: normal;
+  font-weight: bold;
+  color: var(--black-color);
+}
+
+.contact--list ul {
+  padding: var(--medium-space) 0;
+  margin-right: var(--large-space);
+}
+
+.contact--actions{
+  align-items: flex-end;
+}
+
+.contact--actions a{
+  margin-right: var(--normal-space);
+}
+
+
+.contact--list ul li {
+  padding: var(--small-space) 0;
+}
+
+
+
 @media screen and (max-width: 1000px){
+
+  #place-detail__filter{
+    display: none;
+  }
   #place-detail__info{
+    min-width: 100%;
     width: 100%;
     max-width: 100%;
   }

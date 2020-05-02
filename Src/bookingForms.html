@@ -4,12 +4,161 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Booking Forms</title>
+
+  <link rel="stylesheet" href="Styles/bookingForms.css">
 </head>
 <body>
-  <header></header>
-  <main>
-    <section></section>
-    <section></section>
+  <!-- ------------------------- Start header -------------------------------------- -->
+    <!-- ------------------------- Start header -------------------------------------- -->
+
+    <!-- ------------------------- Start Menu -------------------------------------- -->
+    <header class='main-header container-column'>
+
+      <menu class='container-center container-column background-black' id='container__menu' opne='close'> 
+        <h2>
+          Navigation
+        </h2>
+    
+        <ul class='container-center container-column'>
+          <li><a href="">Home</a></li>
+          <li><a href="">Booking</a></li>
+          <li><a href="">About Places</a></li>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Contact</a></li>  
+        </ul>
+    
+        <small>
+          Copyright Booking.com
+        </small>
+      </menu>
+
+        <nav class='main-header__nav container-row'>
+          <ul>
+            <li class='main-header__pages'>
+              <a href="./index.html">
+                Home
+              </a>
+            </li>
+            <li class='main-header__pages'>
+              <a href="./booking.html">
+                Booking
+              </a>
+            </li>
+            <li class='main-header__pages'>
+              <a href="./aboutUs.html">
+                About Us
+              </a>
+            </li>
+            <li class='main-header__pages'>
+              <a href="./aboutPlaces.html">
+                About Places
+              </a>
+            </li>
+            <li class='main-header__pages'>
+              <a href="./contact.html">
+                Contact
+              </a>
+            </li>
+          </ul>
+          
+            <a href="login.html">Login</a>
+        </nav>
+
+        <div class='main-header-mobile'>
+          <div>
+            <h1>Travels</h1>
+          </div>
+          <div>
+            <a id='menu__mobile'>
+              Menu
+            </a>
+          </div>
+        </div>
+    </header>
+  <!-- ------------------------- End header -------------------------------------- -->
+<!-- ------------------------- End header -------------------------------------- -->
+
+<!-- ------------------------- Start Main Container -------------------------------------- -->
+  <!-- ------------------------- Start Main Container -------------------------------------- -->
+  <main class='container-center' id='bookingForms__container'>
+    <section class='container-row' id='bookingForms__forms'>
+
+      <!-- Start Steps -->
+      <article class='background-white' id='forms--steps'>
+
+        <div class='container-column container-center'>
+          <div class='container-center stepForm stepForm--complete'>
+            <h3>
+              PLACE NAME
+            </h3>
+          </div>
+
+          <div class='container-center stepForm stepForm--actual'>
+            <h3>
+              TRAVELERS
+            </h3>
+          </div>
+
+          <div class='container-center stepForm'>
+            <h3>
+              CHECKOUT
+            </h3>
+          </div>
+        </div>
+
+        <div>
+          <small>Copyright © Bookings Travel - 2020</small>
+        </div>
+      </article>
+      <!-- End Steps -->
+      
+      <!-- Start Inputs -->
+      <article class='container-left container-column' id='forms--inputs'>
+        <h2>WHO ARE WITH YOU?</h2>
+        <p>
+          Tell us who are the people that are going to travel with you. If you travel alone just skip this step.
+        </p>
+
+        <div class='container-left container-row'>
+
+          <div>
+            <form action="" class='container-column background-white'>
+              <div class='container-column'>
+                <label for="name">First Name</label>
+                <input type="text" placeholder="Give us your first name">
+              </div>
+
+              <div class='container-column'>
+                <label for="name">Last Name</label>
+                <input type="text" placeholder="Give us your first name">
+              </div>
+
+              <div class='container-column'>
+                <label for="name">Birthdate</label>
+                <input type="date">
+              </div>
+
+              <div class='container-column'>
+                <label for="name">Number of Identification</label>
+                <input type="number" placeholder="Give us the number of Identification">
+              </div>
+              
+              <div class='container-column'>
+                <label for="name">Email</label>
+                <input type="text" placeholder="Give us your first name">
+              </div>
+
+            </form>
+          </div>
+            
+        </div>
+
+      </article>
+      <!-- End Inputs -->
+    </section>
   </main>
+
+  <!-- ------------------------- End Main Container -------------------------------------- -->
+<!-- ------------------------- End Main Container -------------------------------------- -->
 </body>
 </html>
