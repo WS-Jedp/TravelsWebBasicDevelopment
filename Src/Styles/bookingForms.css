@@ -11,7 +11,7 @@
 
 #bookingForms__forms{
   position: relative;
-  width: 80%;
+  width: 90%;
   height: 90%;
   box-shadow: 0 0 32px var(--normal-shadow);
   background-color: white;
@@ -72,6 +72,12 @@
   
 /* ----------------------- End Form Steps ----------------------- */
 
+#forms--persons{
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
 #forms--inputs{
   position: relative;
   width: 70%;
@@ -80,5 +86,33 @@
   align-items: flex-start;
   justify-content: flex-start;
   text-align: left;
+  flex-wrap: nowrap;
+  overflow-y: auto;
+  flex-wrap: nowrap;
 }
 
+.forms--inputs-actions > *{
+  margin-right: var(--medium-space);
+}
+
+.forms--inputs-persons{
+  position: relative;
+  width: 100%;
+  overflow-x: scroll;
+  flex-wrap: nowrap;
+}
+
+.forms--inputs-persons button{
+  align-self: center;
+}
+
+.forms--person{
+  padding: var(--normal-space);
+  margin: var(--normal-space) 0;
+  margin-right: var(--normal-space);
+  box-shadow: 0 0 12px var(--light-shadow);
+}
+
+.forms--person-inputs{
+  margin: var(--small-space);
+}

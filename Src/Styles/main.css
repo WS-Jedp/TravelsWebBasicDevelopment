@@ -97,6 +97,28 @@
   outline: none;
 }
 
+/* Forms */
+
+input[type='text'], input[type='number'], input[type='password'], input[type='date'], select{
+  position: relative;
+  border: 1px solid var(--secondary-color);
+  font-size: var(--text-button);
+  padding: var(--small-space);
+  min-width: 100%;
+  width: 100%;
+  max-width: 100%;
+}
+
+input[type='text']::placeholder, input[type='number']::placeholder, input[type='password']::placeholder, input[type='date']::placeholder, select::placeholder{
+  min-width: 100%;
+  width: 100%;
+  max-width: 100%;
+  font-size: var(--text-button);
+  font-style: italic;
+}
+
+/* Forms */
+
 /* Texts */
 
   h1, h2, h3{

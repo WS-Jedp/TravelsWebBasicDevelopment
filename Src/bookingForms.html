@@ -88,10 +88,12 @@
 
         <div class='container-column container-center'>
           <div class='container-center stepForm stepForm--complete'>
-            <h3>
-              PLACE NAME
-            </h3>
-          </div>
+            <a href="bookingPlace.html">
+              <h3>
+                PLACE NAME
+              </h3>
+            </a>
+            </div>
 
           <div class='container-center stepForm stepForm--actual'>
             <h3>
@@ -119,46 +121,58 @@
           Tell us who are the people that are going to travel with you. If you travel alone just skip this step.
         </p>
 
-        <div class='container-left container-row'>
+        <form action='server.php' method='POST' class='container-left container-column' id='forms--persons'>
 
-          <div>
-            <form action="" class='container-column background-white'>
-              <div class='container-column'>
+        <div class='container-row container-left forms--inputs-persons'>
+
+            <article class='container-column background-white forms--person'>
+              <div class='container-column forms--person-inputs'>
                 <label for="name">First Name</label>
-                <input type="text" placeholder="Give us your first name">
+                <input type="text" name='name' placeholder="Give us your first name">
               </div>
 
-              <div class='container-column'>
-                <label for="name">Last Name</label>
-                <input type="text" placeholder="Give us your first name">
+              <div class='container-column forms--person-inputs'>
+                <label for="lastName">Last Name</label>
+                <input type="text" name='lastName' placeholder="Give us your first name">
               </div>
 
-              <div class='container-column'>
-                <label for="name">Birthdate</label>
-                <input type="date">
+              <div class='container-column forms--person-inputs'>
+                <label for="birthdate">Birthdate</label>
+                <input type="date" name='birthdate'>
               </div>
 
-              <div class='container-column'>
-                <label for="name">Number of Identification</label>
-                <input type="number" placeholder="Give us the number of Identification">
+              <div class='container-column forms--person-inputs'>
+                <label for="id">Number of Identification</label>
+                <input type="number" name='id' placeholder="Give us the number of Identification">
               </div>
               
-              <div class='container-column'>
-                <label for="name">Email</label>
-                <input type="text" placeholder="Give us your first name">
+              <div class='container-column forms--person-inputs'>
+                <label for="email">Email</label>
+                <input type="text" name='email' placeholder="Give us your first name">
               </div>
+            </article>
 
-            </form>
-          </div>
             
+            
+            
+            
+          </div>
+          
+        <div class='container-row forms--inputs-actions'>
+          <button type="submit" class='button__primary'>Done!</button>
+          <button class='button__secondary' id='forms--addPerson'>One More?</button>
         </div>
-
-      </article>
+      </form>
       <!-- End Inputs -->
     </section>
   </main>
 
   <!-- ------------------------- End Main Container -------------------------------------- -->
 <!-- ------------------------- End Main Container -------------------------------------- -->
+
+<!-- ------------------------- Start scripts -------------------------------------- -->
+  <script src="Scripts/bookingForms.js"></script>
+<!-- ------------------------- End scripts -------------------------------------- -->
+
 </body>
 </html>
